@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.R. Milk Tea</title>
+</head>
+<style>
+    body {
+        background-color: #87bfe4;
+        font-family: "Times New Roman", Times, serif;
+        color: rgb(184, 43, 43);
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        background: rgb(254, 1, 1);
+        background: linear-gradient(90deg, rgba(254, 1, 1, 1) 0%, rgba(255, 86, 86, 1) 35%, rgba(252, 155, 155, 1) 65%, rgba(255, 254, 254, 1) 100%);
+        color: #2a3f9c;
+        text-align: center;
+        padding: 10px;
+        font-family: 'Gill Sans MT';
+        font-size: 30px;
+        text-shadow: 2px 2px red;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(202, 23, 32);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #dddddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .myDiv {
+        border: 5px outset #2a3f9c;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 10%;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .indent {
+        text-indent: 50px;
+    }
+
+    .marg {
+        margin: 35px;
+        text-align: left;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+    .item {
+        width: 200px;
+        text-align: center;
+        display: block;
+        background-color: transparent;
+        border: 1px solid transparent;
+        margin-right: 10px;
+        margin-bottom: 1px;
+        float: left;
+    }
+</style>
+
+<body>
+    <div class="myDiv">
+        <header class="title">
+            <h1> M.R. Tea House <h1>
+        </header>
+    </div>
+    <div class="navbar">
+        <a href="aboutus.html">About Us</a>
+        <div class="dropdown">
+            <button class="dropbtn">Products
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+        <a href="order.html">Order</a>
+        <a href="testimonial.html">Testimonials</a>
+    </div>
+    <main class="content">
+        <section id="aboutus">
+            <img src="establishment.jpg" width="330" height="280"
+                style="float: left; margin-right: 10px; margin-bottom: 5px" />
+            </div>
+            <div class="indent">
+                <p class="marg">
+                    Mr. Tea House is a cozy spot that only sells awesome milk tea with lots of different flavors. We're
+                    not trying to brag, but we get a good number of customers every day. That's probably because our
+                    milk tea is special compared to other places – it just tastes really good! And the best part? It's
+                    not crazy expensive. We believe everyone should enjoy top-notch milk tea without breaking the bank.
+                    Plus, we've got some wild flavors you won't find anywhere else, making your tea experience here
+                    totally unique. So, swing by and treat your taste buds to something different at Mr. Tea House!
+                    Even though things are going smoothly for us, we don't have any immediate plans to grow the
+                    business. We're happy with how things are going and want to focus on keeping up the good work rather
+                    than getting bigger. So, for now, we're staying put and making sure our current customers continue
+                    to have a great experience with us. If anything changes down the road, we'll be sure to let everyone
+                    know. But for now, we're just enjoying where we're at!
+
+                </p>
+                <p class="marg">
+                    We offer take-out and delivery services, and you can find us on GrabFood and FoodPanda. So, if
+                    you're craving our delicious milk tea but want it in the comfort of your own home, just hop on these
+                    apps and place your order. We'll make sure to bring the goodness right to your doorstep. Convenience
+                    at its best!
+                </p>
+                <hr>
+                <h1>Business Location</h1>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30894.19060819738!2d121.08530929999999!3d14.5549225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c78efe4533d3%3A0xa38db3807c435fff!2sM.R.%20Tea%20House!5e0!3m2!1sen!2sph!4v1708364232207!5m2!1sen!2sph"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <hr>
+                <h1>Social Media</h1>
+                <ul>
+                    <li>
+                        <p><a href="https://www.facebook.com/mrteahouse/">Our Facebook Page</a></p>
+                    </li>
+                  </ul>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+<hr>
+<footer>
+    @juanageloranjo
+</footer>
+
+</html>

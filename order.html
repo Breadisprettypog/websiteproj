@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+     body {
+          background-color: #87bfe4;
+          font-family: "Times New Roman", Times, serif;
+          color: rgb(184, 43, 43);
+          font-size: 25px;
+          margin: 0;
+          padding: 0;
+
+     }
+
+     .title {
+          background: rgb(254, 1, 1);
+          background: linear-gradient(90deg, rgba(254, 1, 1, 1) 0%, rgba(255, 86, 86, 1) 35%, rgba(252, 155, 155, 1) 65%, rgba(255, 254, 254, 1) 100%);
+          color: #2a3f9c;
+          text-align: center;
+          padding: 10px;
+          font-family: 'Gill Sans MT';
+          font-size: 30px;
+          text-shadow: 2px 2px red;
+     }
+
+     .navbar {
+          overflow: hidden;
+          background-color: #333;
+     }
+
+     .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+     }
+
+
+     .dropdown {
+          float: left;
+          overflow: hidden;
+     }
+
+     .dropdown .dropbtn {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+     }
+
+     .navbar a:hover,
+     .dropdown:hover .dropbtn {
+          background-color: rgb(202, 23, 32);
+     }
+
+     .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+     }
+
+     .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+     }
+
+     .dropdown-content a:hover {
+          background-color: #dddddd;
+     }
+
+     .dropdown:hover .dropdown-content {
+          display: block;
+     }
+
+     .myDiv {
+          border: 5px outset #2a3f9c;
+     }
+
+     table {
+          border-collapse: collapse;
+          width: 10%;
+     }
+
+     .center {
+          text-align: center;
+     }
+
+     .indent {
+          text-indent: 50px;
+     }
+
+     .marg {
+          margin: 35px;
+          text-align: left;
+     }
+
+     img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+     }
+
+     .content {
+          padding: 20px;
+          border-radius: 0px;
+     }
+
+     .item {
+          width: 200px;
+          text-align: center;
+          display: block;
+          background-color: transparent;
+          border: 1px solid transparent;
+          margin-right: 10px;
+          margin-bottom: 1px;
+          float: left;
+     }
+
+     #borderimg1 {
+          border: 10px solid transparent;
+          padding: 15px;
+          border-image: url(border.png) 30 round;
+     }
+
+     #borderimg2 {
+          border: 10px solid transparent;
+          padding: 15px;
+          border-image: url(border.png) 30 stretch;
+     }
+</style>
+
+<body>
+     <a id="top"></a>
+     <div class="myDiv">
+          <header class="title">
+               <h2> Order <h2>
+          </header>
+     </div>
+     <div class="navbar">
+          <a href="aboutus.html">About Us</a>
+          <div class="dropdown">
+               <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="dropdown-content">
+                    <a href="Menu.html">Menu</a>
+                    <a href="gallery.html">Gallery</a>
+               </div>
+          </div>
+          <a href="order.html">Order</a>
+          <a href="testimonial.html">Testimonials</a>
+     </div>
+     <section>
+          <h3 id="borderimg2">REGISTRATION FORM</h3>
+          <form method="post" action="mailto:jadranjo@mapua.edu.ph" autocomplete="on">
+               <br />
+               <fieldset>
+                    <legend allign=right>Log in Info</legend>
+                    <br />
+                    Username/Email:<input type="email" name="username" size=15 maxlength=20>
+                    <br />
+                    <br />
+                    Password:<input type=password name="password" size=15 maxlength=20>
+                    <br />
+                    <br />
+                    <br />
+               </fieldset>
+               <hr />
+               <h3 id="borderimg2">ORDER FORM</h3>
+               <br />
+               <br />
+               Name: <input type=text name="pangalan" size=20 maxlength=25>
+               <br />
+               <label for="city">City:</label>
+               <select name="city" id="city">
+                    <option value="pasig">Pasig</option>
+                    <option value="quezoncity">Quezon</option>
+                    <option value="marikina">Marikina</option>
+                    <option value="mandaluyong">Mandaluyong</option>
+               </select>
+               <br />
+               Adress: <input type=text name="lokation" size=20 maxlength=25>
+               <br />
+               <br />
+               Choose the flavor you like:
+               <br />
+               <input type="checkbox" name="polvoron" value="natadecoco">Caramelli
+               <input type="checkbox" name="polvoron" value="ube">Cramberi
+               <input type="checkbox" name="polvoron" value="chocolate">Glowmei
+               <input type="checkbox" name="polvoron" value="chocolate">Black Forest
+               <input type="checkbox" name="polvoron" value="chocolate">Merumi
+               <input type="checkbox" name="polvoron" value="chocolate">Tesri
+               <input type="checkbox" name="polvoron" value="chocolate">Green Apple Fruit
+               <input type="checkbox" name="polvoron" value="chocolate">Gelbing
+               <input type="checkbox" name="polvoron" value="chocolate">Frengo
+               <br />
+               <br />
+               Choose how large you like:
+               <br />
+               <input type="checkbox" name="size" value="small">Small (8 oz)
+               <input type="checkbox" name="size" value="big">Medium (12 oz)
+               <input type="checkbox" name="size" value="large">Large (16 oz)
+               <input type="checkbox" name="size" value="extralarge">Extra Large (20 oz)
+               <br />
+               <br />
+               <input type=submit value=submit>
+               <br />
+               <hr />
+               <h3>COMMENT/SUGGESTION FORM</h3>
+               <br />
+               Any comments or suggestions to improve our product/business:
+               <br />
+               <textarea rows=20 cols=100 id="suggest">  </textarea>
+               <br />
+               <br />
+               <input type=submit value=submit>
+               <input type=reset value=reset>
+          </form>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <a href="#top">Back to top</a>
+     </section>
+     <footer>
+          <hr />
+          @juanangeloranjo
+     </footer>
+
+</body>
+
+</html>

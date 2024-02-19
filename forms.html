@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #87bfe4;
+        font-family: "Times New Roman", Times, serif;
+        color: rgb(184, 43, 43);
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        background: rgb(254, 1, 1);
+        background: linear-gradient(90deg, rgba(254, 1, 1, 1) 0%, rgba(255, 86, 86, 1) 35%, rgba(252, 155, 155, 1) 65%, rgba(255, 254, 254, 1) 100%);
+        color: #2a3f9c;
+        text-align: center;
+        padding: 10px;
+        font-family: 'Gill Sans MT';
+        font-size: 30px;
+        text-shadow: 2px 2px red;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(202, 23, 32);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #dddddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .myDiv {
+        border: 5px outset #2a3f9c;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 10%;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .indent {
+        text-indent: 50px;
+    }
+
+    .marg {
+        margin: 35px;
+        text-align: left;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+    .item {
+        width: 200px;
+        text-align: center;
+        display: block;
+        background-color: transparent;
+        border: 1px solid transparent;
+        margin-right: 10px;
+        margin-bottom: 1px;
+        float: left;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <main class="content">
+        <div class="myDiv">
+            <header class="title">
+                <h1> Forms <h1>
+            </header>
+        </div>
+        <div class="navbar">
+            <a href="aboutus.html">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Menu.html">Menu</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </div>
+            <a href="order.html">Order</a>
+            <a href="testimonial.html">Testimonials</a>
+        </div>
+
+        <main class="content">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">City</label>
+                    <select id="country" name="country">
+                        <option value="pasig">Pasig</option>
+                        <option value="quezon">Quezon</option>
+                        <option value="marikina">Marikina</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+</body>
+<hr>
+<footer>
+    @juanangeloranjo
+</footer>
+
+</html>
